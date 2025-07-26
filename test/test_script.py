@@ -1,3 +1,5 @@
+"""Test script to validate World Bank data indicators."""
+
 import wbdata
 
 indicators_to_test = [

@@ -33,12 +33,11 @@ try:
     df_filtered = df_filtered.sort_values('year').reset_index(drop=True)
 
     # 5. Save the final data
-    output_path = './data/raw/world_bank_iran_data.csv'
-    df_filtered.to_csv(output_path, index=False)
-    
-    print(f"\n✅ Final data for {date_range[0]}-{date_range[1]} saved to {output_path}")
+    OUTPUT_PATH = './data/raw/world_bank_iran_data.csv'
+    df_filtered.to_csv(OUTPUT_PATH, index=False)
+    print(f"\n✅ Final data for {date_range[0]}-{date_range[1]} saved to {OUTPUT_PATH}")
     print("--- First 5 rows of the clean data: ---")
     print(df_filtered.head())
-    
+
 except Exception as e:
     print(f"❌ Error fetching data: {e}")
