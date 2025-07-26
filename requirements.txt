@@ -1,3 +1,7 @@
 pandas
 requests
 wbdata
+matplotlib
+seaborn
+arabic_reshaper
+python-bidi

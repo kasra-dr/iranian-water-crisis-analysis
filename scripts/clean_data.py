@@ -1,3 +1,5 @@
+"""Script to clean and process raw World Bank data for Iran."""
+
 import os
 import pandas as pd
 
